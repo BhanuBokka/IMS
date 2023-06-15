@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Orders</title>
+    <style>
+        body{
+            background-color:orangered;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: bisque;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Show Orders</h1>
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <th>Product ID</th>
+            <th>Customer ID</th>
+            <th>Quantity</th>
+        </tr>
+        {% for order in data %}
+        <tr>
+            <td>{{ order.orders_id }}</td>
+            <td>{{ order.product_id }}</td>
+            <td>{{ order.customer_id }}</td>
+            <td>{{ order.quantity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

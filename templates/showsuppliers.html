@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Suppliers</title>
+    <style>
+        body{
+            background-color:orangered;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color:bisque;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Show Suppliers</h1>
+    <table>
+        <tr>
+            <th>Supplier ID</th>
+            <th>Supplier Name</th>
+            <th>Supplier Address</th>
+            <th>Supplier Email</th>
+        </tr>
+        {% for supplier in data %}
+        <tr>
+            <td>{{ supplier.supplier_id }}</td>
+            <td>{{ supplier.supplier_name }}</td>
+            <td>{{ supplier.supplier_addr }}</td>
+            <td>{{ supplier.supplier_mail }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

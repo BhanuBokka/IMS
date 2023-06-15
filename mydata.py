@@ -1,0 +1,13 @@
+import sqlite3
+conn = sqlite3.connect('myims.db')
+cur = conn.cursor()
+#cur.execute("CREATE TABLE CUSTOMER(CUST_ID VARCHAR(30), CUST_NAME VARCHAR(40), CUST_ADDR VARCHAR(30), CUST_MAIL VARCHAR(40))")
+#cur.execute('CREATE TABLE SUPPLIER(SUPPLIER_ID VARCHAR(30),SUPPLIER_NAME VARCHAR(40),SUPPLIER_ADDR VARCHAR(30),SUPPLIER_MAIL VARCHAR(40))')
+#cur.execute('CREATE TABLE PRODUCT(PRODUCT_ID VARCHAR(30),PRODUCT_NAME VARCHAR(40),PRODUCT_PRICE FLOAT,STOCK INT,SUPPLIER_ID VARCHAR(30))')
+#cur.execute('CREATE TABLE ORDERS(ORDER_ID VARCHAR(30),PRODUCT_ID VARCHAR(30),CUSTOMER_ID VARCHAR(30),QUANTITY INT)')
+#cur.execute("insert into supplier values('SUP1','Krishna','Dwaraka','krishna@gmail.com')")
+#cur.execute("insert into CUSTOMER values('CUS1','Ram','Ayodhya','ram@gmail.com')")
+#cur.execute("insert into PRODUCT values('PRD1','IPHONE',50000,900,'SUP1')")
+#cur.execute("insert into ORDERS values('ORD1','PRD1','CUS1',5)")
+#cur.execute("DELETE FROM ORDERS WHERE order_id='ORD1'")
+conn.commit()

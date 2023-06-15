@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:orangered;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color:blanchedalmond;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            font-weight: bold;
+            display:b;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .form-group input[type="submit"] {
+            background-color:green;
+            color:bl;
+            cursor: pointer;
+        }
+        
+        .form-group input[type="submit"]:hover {
+            background-color:green;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Add Products</h1>
+        <div class="form-container">
+        <form action="/add-products" method="POST">
+            <div class="form-group">
+                <label for="product_id">Product ID:</label>
+                <input type="text" name="product_id" id="product_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product_name">Product Name:</label>
+                <input type="text" name="product_name" id="product_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product_price">Product Price:</label>
+                <input type="text" name="product_price" id="product_price" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product_stock">Product Stock:</label>
+                <input type="text" name="product_stock" id="product_stock" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product_supplier_id">Product Supplier ID:</label>
+                <input type="text" name="product_supplier_id" id="product_supplier_id" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+</body>
+</html>

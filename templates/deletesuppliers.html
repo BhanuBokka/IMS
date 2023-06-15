@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Suppliers</title>
+    <style>
+        body {
+            background-color:orangered;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+         
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color:blanchedalmond;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            font-weight: bold;
+            display:b;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .form-group input[type="submit"] {
+            background-color:green;
+            color:bl;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Delete supppliers</h1>
+    <div class="form-container">
+        <form action="/delete-suppliers" method="POST">
+            <div class="form-group">
+                <label for="supplier_id">Supplier ID:</label>
+                <input type="text" name="supplier_id" id="supplier_id" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Delete">
+            </div>
+    </form>
+</body>
+</html>

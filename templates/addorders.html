@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:orangered;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color:blanchedalmond;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            font-weight: bold;
+            display:b;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .form-group input[type="submit"] {
+            background-color:green;
+            color:bl;
+            cursor: pointer;
+        }
+        
+        .form-group input[type="submit"]:hover {
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Orders</h1>
+    <div class="form-container">
+        <form action="/add-orders" method="POST">
+            <div class="form-group">
+                <label for="order_id">Order ID:</label>
+                <input type="text" name="order_id" id="order_id" required>
+            </div>
+            <div class="form-group">
+                <label for="product_id">Product ID:</label>
+                <input type="text" name="product_id" id="product_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer_id">Customer ID:</label>
+                <input type="text" name="customer_id" id="customer_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="text" name="quantity" id="quantity" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="submit">
+            </div>
+    </form>
+</body>
+</html>
+
